@@ -31,9 +31,12 @@ Os serviços disponíveis são:
 ## COMO USAR
 
 As chamadas devem ser feitas para o localhost, utilizando a porta 8080 (localhost:8080). A coleção com as chamadas está disponível no postaman [clicando aqui.](https://www.postman.com/cloudy-crescent-220434/fiap-modulo1/collection/9844450-6446375a-1965-46c8-b179-925fb9885156)
+
  ### Criar veiculo 
  **POST:** localhost:8080/api/v1/veiculos
+ 
  [Open request](https://www.postman.com/cloudy-crescent-220434/request/9844450-7fd24b14-b159-4d38-9307-0c4bd479761a)
+ 
 Request body (json):
 ```json
 {
@@ -47,7 +50,9 @@ Request body (json):
 
 ###  Atualizar veiculo
 **PUT:** localhost:8080/api/v1/veiculos/<ID_VEICULO>
+
 [Open request](https://www.postman.com/cloudy-crescent-220434/request/9844450-c7e227ce-4dc6-4bde-823d-da41b255dc35)
+
 Request body (json):
 
 ```json
@@ -61,9 +66,10 @@ Request body (json):
 ```
 
 ###  Vender veiculo
-
 **PUT:** localhost:8080/api/v1/veiculos/<ID_VEICULO>/vender
+
 [Open request](https://www.postman.com/cloudy-crescent-220434/request/9844450-8984eec4-06f7-41c6-8232-597325697622)
+
 Request body (json):
 
 ```json
@@ -74,9 +80,11 @@ Request body (json):
 
 ###  Listar veiculos para venda
 **GET:** localhost:8080/api/v1/veiculos/venda
+
 [Open request](https://www.postman.com/cloudy-crescent-220434/request/9844450-7f0be942-9243-420f-a088-1681c116dcbf)
 
 ### Listar veiculos vendidos
 **GET:** localhost:8080/api/v1/veiculos/vendidos
+
 [Open request](https://www.postman.com/cloudy-crescent-220434/request/9844450-6507555e-8020-470d-aa23-7403cc8fd6c2)
 
