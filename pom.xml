@@ -2,9 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.fiap.pontoeletronicoconsultaregistro</groupId>
-  <artifactId>revenda-veiculo-api</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <name>Archetype - revenda-veiculo-api</name>
+  <artifactId>api-revenda-veiculo</artifactId>
+  <version>1.0</version>
+  <name>revenda-veiculo-api</name>
+  <description>API para projeto revenda de veiculo</description>
   <url>http://maven.apache.org</url>
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -27,12 +28,6 @@
       <optional>true</optional>
     </dependency>
     <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <version>3.25.2</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
@@ -46,7 +41,14 @@
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <scope>runtime</scope>
-      <version>42.6.0</version>
     </dependency>
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 </project>

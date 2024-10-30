@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  db-revenda:
+    container_name: db-revenda
+    image: postgres:latest
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+    user: postgres
+    volumes:
+      - ./data.sql:/docker-entrypoint-initdb.d/data.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api-revenda:
+    container_name: api-revenda
+    image: openjdk:latest
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    volumes:
+      - ./api-revenda-veiculo-1.0.jar:/usr/src/myapp/app.jar
+    command:
+      ["java","-jar","/usr/src/myapp/app.jar","--spring.profiles.active=${SPRING_PROFILE}"]
+    depends_on:
+      db-revenda:
+        condition: service_healthy
