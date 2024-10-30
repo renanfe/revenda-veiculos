@@ -12,7 +12,7 @@ Os serviços disponíveis são:
  - Listar veículos para venda
  - Listar veículos vendidos
 
-[Link para a documentação]((https://miro.com/app/board/uXjVMgT-ogo=/))
+[Link para a documentação](https://miro.com/app/board/uXjVMgT-ogo=/)
 
 ## INSTALAÇÃO
 
