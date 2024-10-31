@@ -30,7 +30,7 @@ Os serviços disponíveis são:
 
 ## COMO USAR
 
-As chamadas devem ser feitas para o localhost, utilizando a porta 8080 (localhost:8080). A coleção com as chamadas está disponível no postaman [clicando aqui.](https://www.postman.com/cloudy-crescent-220434/fiap-modulo1/collection/9844450-6446375a-1965-46c8-b179-925fb9885156)
+As chamadas devem ser feitas para o localhost, utilizando a porta 8080 (localhost:8080). A coleção com as chamadas está disponível no postman [clicando aqui.](https://www.postman.com/cloudy-crescent-220434/fiap-modulo1/collection/9844450-6446375a-1965-46c8-b179-925fb9885156)
 
  ### Criar veiculo 
  **POST:** localhost:8080/api/v1/veiculos
